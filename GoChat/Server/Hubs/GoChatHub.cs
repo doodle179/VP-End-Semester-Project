@@ -5,11 +5,11 @@ using Microsoft.AspNetCore.SignalR;
 namespace GoChat.Server.Hubs
 {
     [Authorize]
-    public class BlazingChatHub: Hub<IBlazingChatHubClient>, IBlazingChatHubServer
+    public class GoChatHub: Hub<IBlazingChatHubClient>, IBlazingChatHubServer
     {
         private static readonly IDictionary<int, UserDto> _onlineUsers = new Dictionary<int, UserDto>();
 
-        public BlazingChatHub()
+        public GoChatHub()
         {
 
         }
