@@ -2,14 +2,14 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.SignalR;
 
-namespace GoChat.Server.Hubs
+namespace BlazingChat.Server.Hubs
 {
     [Authorize]
     public class GoChatHub: Hub<IBlazingChatHubClient>, IBlazingChatHubServer
     {
         private static readonly IDictionary<int, UserDto> _onlineUsers = new Dictionary<int, UserDto>();
 
-        public GoChatHub()
+        public BlazingChatHub()
         {
 
         }
